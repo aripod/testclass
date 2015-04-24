@@ -1,0 +1,20 @@
+component testclass{
+	version		"1.0";
+	require		"genom3 >= 2.99.24";
+
+	task A{
+		period		100ms;
+		priority	100;
+		stack		4000;
+
+		codel <start> 	InitTaskA() yield ether;
+	};
+
+	task B{
+		period		100ms;
+		priority	100;
+		stack		4000;
+
+		codel <start> 	InitTaskB() yield ether;
+	};
+};
