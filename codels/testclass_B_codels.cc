@@ -25,3 +25,21 @@ InitTaskB(genom_context self)
 
     return testclass_ether;
 }
+
+
+/* --- Activity b ------------------------------------------------------- */
+
+/** Codel bStart of activity b.
+ *
+ * Triggered by testclass_start.
+ * Yields to testclass_ether.
+ */
+genom_event
+bStart(genom_context self)
+{
+    extern Date a;
+
+    std::cout << "Task B: " << a.GetMonth() << "\n";
+
+    return testclass_ether;
+}

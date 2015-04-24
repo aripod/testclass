@@ -23,3 +23,25 @@ InitTaskA(genom_context self)
 
     return testclass_ether;
 }
+
+
+/* --- Activity a ------------------------------------------------------- */
+
+/** Codel aStart of activity a.
+ *
+ * Triggered by testclass_start.
+ * Yields to testclass_ether.
+ */
+genom_event
+aStart(genom_context self)
+{
+    extern int first;
+
+    std::cout << "Task A: " << a.GetMonth() << "\n";
+
+    std::cout << "First: \n" << first;
+    first = 20;
+    a.SetDate(first,1,1);
+
+    return testclass_ether;
+}

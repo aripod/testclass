@@ -17,4 +17,16 @@ component testclass{
 
 		codel <start> 	InitTaskB() yield ether;
 	};
+
+    activity a(){
+        task A;
+
+        codel <start> aStart() yield ether;
+    };
+
+    activity b(){
+        task B;
+
+        codel <start> bStart() yield ether;
+    };
 };

@@ -1,16 +1,16 @@
 lib_LTLIBRARIES = libtestclass_codels.la
 
-libtestclass_codels_la_SOURCES=	 testclass_c_types.h
-libtestclass_codels_la_SOURCES+= testclass_codels.cc
-libtestclass_codels_la_SOURCES+= testclass_A_codels.cc
-libtestclass_codels_la_SOURCES+= testclass_B_codels.cc
+libtestclass_codels_la_SOURCES=	testclass_c_types.h
+libtestclass_codels_la_SOURCES+=	testclass_codels.cc
+libtestclass_codels_la_SOURCES+=	testclass_A_codels.cc
+libtestclass_codels_la_SOURCES+=	testclass_B_codels.cc
 
-libtestclass_codels_la_SOURCES+= Date.h
-libtestclass_codels_la_SOURCES+= Date.cc
+libtestclass_codels_la_SOURCES+=	Date.h
+libtestclass_codels_la_SOURCES+=	Date.cc
 
-libtestclass_codels_la_CPPFLAGS= $(requires_CFLAGS)
-libtestclass_codels_la_LDFLAGS=	 s$(requires_LIBS)
-libtestclass_codels_la_LDFLAGS+= -release $(PACKAGE_VERSION)
+libtestclass_codels_la_CPPFLAGS=	$(requires_CFLAGS)
+libtestclass_codels_la_LDFLAGS=	$(requires_LIBS)
+libtestclass_codels_la_LDFLAGS+=	-release $(PACKAGE_VERSION)
 
 
 # idl  mappings
