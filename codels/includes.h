@@ -5,4 +5,6 @@
 
 Date a;
 
+int first=10;
+
 #endif

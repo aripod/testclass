@@ -18,6 +18,9 @@ genom_event
 InitTaskB(genom_context self)
 {
     extern Date a;
+    extern int first;
+    std::cout << "Task B: " << a.GetMonth() << "\n";
+    a.SetDate(first,1,1);
     std::cout << "Task B: " << a.GetMonth() << "\n";
 
     return testclass_ether;
