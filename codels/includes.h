@@ -3,7 +3,7 @@
 
 #include "Date.h"
 
-Date a;
+Date a(0,0,0);
 
 int first=10;
 

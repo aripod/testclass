@@ -3,15 +3,18 @@
 
 class Date
 {
-public:
+private:
     int m_nMonth;
     int m_nDay;
     int m_nYear;
 
-    Date() {};
+    int values[5];
+
+    
  
 public:
     Date(int nMonth, int nDay, int nYear);
+    Date() {};
  
     void SetDate(int nMonth, int nDay, int nYear);
  
